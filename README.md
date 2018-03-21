@@ -14,3 +14,12 @@ Aunque suene un poco confuso, **SQL** no tiene nada que ver con **GraphQL**, ya 
 Una de las ventajas más importantes de **GraphQL** es que es agnóstico de plataforma, lo que quiere decir que se puede implementar en más de 20 lenguajes.
 
 El principal objetivo de **GraphQL** es evitar las múltiples consultas al servidor.
+
+
+
+
+<br><br>
+
+### Enlaces de Interes ###
+[GraphQL](http://facebook.github.io/graphql/) <br>
+[GraphQL.js](https://github.com/graphql/graphql-js)
