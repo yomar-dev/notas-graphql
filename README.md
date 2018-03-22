@@ -43,6 +43,15 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
  - Interfaces
  - Unions
 
+<br>
+**Scalars:**  nos van a permitir definir la mayoría de las propiedades de nuestras entidades.
+
+ - Int - Números enteros
+ - Float - Números decimales
+ - String - Cadenas de texto
+ - Boolean - Verdadero o Falso
+ - ID - Identificador único
+
 
 <br><br>
 
