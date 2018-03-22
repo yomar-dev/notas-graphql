@@ -29,6 +29,10 @@ Al ser un lenguaje tipado, **GraphQL** es un lenguaje documentado por definició
 
 
 
+<br>
+### Construyendo esquemas a través de tipos ###
+
+
 <br><br>
 
 ### Enlaces de Interes ###
