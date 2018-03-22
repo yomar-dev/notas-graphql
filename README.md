@@ -70,6 +70,17 @@ type Profesor {
 }
 ~~~
 
+<br>
+**Enums:** Es un tipo que nos permite definir algo que puede tomar el valor de una lista de opciones. <br>
+*Ejemplo:* <br>
+~~~
+enum Genero {
+	MASCULINO
+	FEMENINO
+}
+~~~
+
+
 <br><br>
 
 ### Enlaces de Interes ###
