@@ -110,6 +110,19 @@ type PerfilTW implements Perfil{
 union Busqueda = Amigo | Lugar | Evento | Pagina
 ~~~
 
+<br>
+**Modificadores de tipo:** Existen dos modificadores de tipo. <br>
+
+ - **Requerido:** Signo de admiración al final, y significa que ese campo no puede ser null.
+ - **Corchetes:** Para denotar que tenemos una lista de lo que sea que está en medio.
+
+~~~
+String! NOT NULL
+[String] Lista
+[String]! Lista que no puede ser NULL pero que sin embargo sus elementos pueden ser NULL.
+[String!]! Lista que no puede ser NULL ni tampoco contener ni un solo elemento NULL.
+~~~
+
 
 <br><br>
 
