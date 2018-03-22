@@ -32,6 +32,17 @@ Al ser un lenguaje tipado, **GraphQL** es un lenguaje documentado por definició
 <br>
 ### Construyendo esquemas a través de tipos ###
 
+**El Schema - Types:** Es la columna vertebral de **GraphQL** y es la manera en la que decidimos las entidades, cómo se relacionan entre ellas, cuáles son las entidades que están disponibles para cada cliente, en pocas palabras, es todo lo que el cliente puede pedir a través de **GraphQL.** <br>
+*Algo que tenemos que saber es que los Schemas están compuestos de Types.*
+
+Los **types** o tipos de datos que pueden usarse en un **schema** son los siguiente:
+
+ - Scalar
+ - Objects
+ - Enums
+ - Interfaces
+ - Unions
+
 
 <br><br>
 
