@@ -80,6 +80,29 @@ enum Genero {
 }
 ~~~
 
+<br>
+**Interface:** Permite que los atributos especificados dentro de esta, tambien se definan en los objetos que la implementen. <br>
+*Ejemplo:* <br>
+~~~
+interface Perfil{
+  nombre: String!
+  mail: String!
+}
+
+type PerfilFB implements Perfil{
+  nombre: String!
+  mail: String!
+  amigos: [Usuario]
+}
+
+type PerfilTW implements Perfil{
+  nombre: String!
+  mail: String!
+  handle: String
+  seguidores: [Usuario]
+}
+~~~
+
 
 <br><br>
 
