@@ -57,4 +57,6 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
 
 ### Enlaces de Interes ###
 [GraphQL](http://facebook.github.io/graphql/) <br>
-[GraphQL.js](https://github.com/graphql/graphql-js)
+[GraphQL.js](https://github.com/graphql/graphql-js) <br>
+[Scalar Types](http://graphql.org/learn/schema/#scalar-types) <br>
+[Custom Scalars](https://www.apollographql.com/docs/graphql-tools/scalars.html) <br>
