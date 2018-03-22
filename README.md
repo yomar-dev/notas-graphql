@@ -52,6 +52,23 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
  - Boolean - Verdadero o Falso
  - ID - Identificador único
 
+<br>
+**Objects:** Son los que nos permiten definir entidades. <br>
+*Ejemplo:* <br>
+~~~
+type Curso {
+  id : ID!
+  descripcion: String
+  profesores: [Profesor]
+  rating: Int
+}
+
+type Profesor {
+  nombre: String
+  edad: Int
+  tieneMascota: Boolean
+}
+~~~
 
 <br><br>
 
