@@ -103,6 +103,13 @@ type PerfilTW implements Perfil{
 }
 ~~~
 
+<br>
+**Union:** Permite definir **diferentes posibles tipos (o interfaces)** que se esperan como resultado para **diferentes tipos objetos (o entidades)** si alguna de ellas cumple con la **condición** definida para una búsqueda. <br>
+*Ejemplo:* <br>
+~~~
+union Busqueda = Amigo | Lugar | Evento | Pagina
+~~~
+
 
 <br><br>
 
