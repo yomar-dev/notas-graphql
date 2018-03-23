@@ -55,6 +55,7 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
 <br>
 **Objects:** Son los que nos permiten definir entidades. <br>
 *Ejemplo:* <br>
+
 ~~~
 type Curso {
   id : ID!
@@ -73,6 +74,7 @@ type Profesor {
 <br>
 **Enums:** Es un tipo que nos permite definir algo que puede tomar el valor de una lista de opciones. <br>
 *Ejemplo:* <br>
+
 ~~~
 enum Genero {
 	MASCULINO
@@ -83,6 +85,7 @@ enum Genero {
 <br>
 **Interface:** Permite que los atributos especificados dentro de esta, tambien se definan en los objetos que la implementen. <br>
 *Ejemplo:* <br>
+
 ~~~
 interface Perfil{
   nombre: String!
@@ -106,6 +109,7 @@ type PerfilTW implements Perfil{
 <br>
 **Union:** Permite definir **diferentes posibles tipos (o interfaces)** que se esperan como resultado para **diferentes tipos objetos (o entidades)** si alguna de ellas cumple con la **condición** definida para una búsqueda. <br>
 *Ejemplo:* <br>
+
 ~~~
 union Busqueda = Amigo | Lugar | Evento | Pagina
 ~~~
@@ -121,6 +125,19 @@ String! NOT NULL
 [String] Lista
 [String]! Lista que no puede ser NULL pero que sin embargo sus elementos pueden ser NULL.
 [String!]! Lista que no puede ser NULL ni tampoco contener ni un solo elemento NULL.
+~~~
+
+<br>
+**Root Type - Query:** Podríamos verlos como una analogía a los **endpoints** que tenemos en una arquitectura **REST.** <br>
+*Ejemplo:* <br>
+
+~~~
+type Query{
+	cursos : [Curso]
+	profesores: [Profesor]
+	curso(id: String!): Curso
+	profesor(id: String!, limite: Int): Profesor
+}
 ~~~
 
 
