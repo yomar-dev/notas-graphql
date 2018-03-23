@@ -140,6 +140,19 @@ type Query{
 }
 ~~~
 
+<br>
+**Root Type - Mutation:** Permite definir *insertar, modificar o eliminar elementos.* <br>
+*Ejemplo:* <br>
+
+~~~
+type Mutation {
+	agregarCurso(
+		descripcion: String,
+		profesorId: String
+	): Curso
+}
+~~~
+
 
 <br><br>
 
