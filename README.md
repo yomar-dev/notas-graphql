@@ -176,6 +176,17 @@ Además **GraphQL** nos permite pedir al servidor todo la información que neces
 }
 ~~~
 
+<br>
+**Argumentos:** En el siguiente ejemplo vemos como pasamos un parametro llamado **id** para obtener un curso en especifico.<br>
+
+~~~
+{
+	curso(id: 2) {
+		titulo
+	}
+}
+~~~
+
 
 
 
