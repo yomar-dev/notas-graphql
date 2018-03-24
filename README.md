@@ -212,6 +212,24 @@ query getCurso($id: Int = 4){
 }
 ~~~
 
+<br>
+**Aliases:** Permite asignar un nombre a una consulta para que al momento de pedir varios recursos del mismo tipo con diferentes **ID** el *query* de no ser así nos dará error.<br>
+
+*Ejemplo:* <br>
+~~~
+{
+  cursoMasVotado: curso(id: 1) {
+    titulo
+    rating
+  }
+
+  cursoMasVisto: curso(id: 2) {
+    titulo
+    descripcion
+  }
+}
+~~~
+
 
 
 <br><br>
