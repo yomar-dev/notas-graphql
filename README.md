@@ -17,6 +17,7 @@ El principal objetivo de **GraphQL** es evitar las múltiples consultas al servi
 
 
 <br>
+
 ### GraphQL vs REST ###
 
 **REST** es solo una convención, lo que quiere decir que es solo la manera en que nos ponemos de acuerdo para comunicarnos. Sin embargo, el hecho de que no hay unas reglas establecidas genera que cada uno utilice la convención de la forma que más le convenga y esto hace que no haya un orden establecido.
@@ -30,6 +31,7 @@ Al ser un lenguaje tipado, **GraphQL** es un lenguaje documentado por definició
 
 
 <br>
+
 ### Construyendo esquemas a través de tipos ###
 
 **El Schema - Types:** Es la columna vertebral de **GraphQL** y es la manera en la que decidimos las entidades, cómo se relacionan entre ellas, cuáles son las entidades que están disponibles para cada cliente, en pocas palabras, es todo lo que el cliente puede pedir a través de **GraphQL.** <br>
@@ -43,7 +45,7 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
  - Interfaces
  - Unions
 
-<br>
+
 **Scalars:**  nos van a permitir definir la mayoría de las propiedades de nuestras entidades.
 
  - Int - Números enteros
@@ -52,7 +54,7 @@ Los **types** o tipos de datos que pueden usarse en un **schema** son los siguie
  - Boolean - Verdadero o Falso
  - ID - Identificador único
 
-<br>
+
 **Objects:** Son los que nos permiten definir entidades. <br>
 *Ejemplo:* <br>
 
@@ -71,8 +73,9 @@ type Profesor {
 }
 ~~~
 
-<br>
-**Enums:** Es un tipo que nos permite definir algo que puede tomar el valor de una lista de opciones. <br>
+
+**Enums:** Es un tipo que nos permite definir algo que puede tomar el valor de una lista de opciones.
+
 *Ejemplo:* <br>
 
 ~~~
@@ -82,7 +85,7 @@ enum Genero {
 }
 ~~~
 
-<br>
+
 **Interface:** Permite que los atributos especificados dentro de esta, tambien se definan en los objetos que la implementen. <br>
 *Ejemplo:* <br>
 
@@ -106,7 +109,7 @@ type PerfilTW implements Perfil{
 }
 ~~~
 
-<br>
+
 **Union:** Permite definir **diferentes posibles tipos (o interfaces)** que se esperan como resultado para **diferentes tipos objetos (o entidades)** si alguna de ellas cumple con la **condición** definida para una búsqueda. <br>
 *Ejemplo:* <br>
 
@@ -114,7 +117,7 @@ type PerfilTW implements Perfil{
 union Busqueda = Amigo | Lugar | Evento | Pagina
 ~~~
 
-<br>
+
 **Modificadores de tipo:** Existen dos modificadores de tipo. <br>
 
  - **Requerido:** Signo de admiración al final, y significa que ese campo no puede ser null.
@@ -127,7 +130,7 @@ String! NOT NULL
 [String!]! Lista que no puede ser NULL ni tampoco contener ni un solo elemento NULL.
 ~~~
 
-<br>
+
 **Root Type - Query:** Podríamos verlos como una analogía a los **endpoints** que tenemos en una arquitectura **REST.** <br>
 *Ejemplo:* <br>
 
@@ -140,7 +143,7 @@ type Query{
 }
 ~~~
 
-<br>
+
 **Root Type - Mutation:** Permite definir *insertar, modificar o eliminar elementos.* <br>
 *Ejemplo:* <br>
 
@@ -176,7 +179,7 @@ Además **GraphQL** nos permite pedir al servidor todo la información que neces
 }
 ~~~
 
-<br>
+
 **Argumentos:** En el siguiente ejemplo vemos como pasamos un parametro llamado **id** para obtener un curso en especifico.<br>
 
 ~~~
@@ -187,7 +190,7 @@ Además **GraphQL** nos permite pedir al servidor todo la información que neces
 }
 ~~~
 
-<br>
+
 **Variables:** Para usar variables es necesario utilizar la forma completa para realizar un *Query*, que es la siguiente:<br>
 
 ~~~
@@ -212,7 +215,7 @@ query getCurso($id: Int = 4){
 }
 ~~~
 
-<br>
+
 **Aliases:** Permite asignar un nombre a una consulta para que al momento de pedir varios recursos del mismo tipo con diferentes **ID** el *query* de no ser así nos dará error.<br>
 
 *Ejemplo:* <br>
