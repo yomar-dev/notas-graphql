@@ -155,6 +155,31 @@ type Mutation {
 
 
 <br><br>
+### GraphiQL ###
+
+**Queries:** De esta forma le estamos indicando al servidor que información queremos, dentro del ***end-point cursos*** estamos indicando que queremos *titulo, descripcion y profesor*, además como el profesor es una entidad, debemos indicar que información queremos de él, en este caso *nacionalidad.* <br>
+Además **GraphQL** nos permite pedir al servidor todo la información que necesitamos un mismo **Request** por eso también hemos solicitado el *nombre* de la entidad **profesores.** <br>
+
+~~~
+{
+	cursos {
+		titulo
+		descripcion
+		profesor {
+			nacionalidad
+		}
+	}
+
+	profesores {
+		nombre
+	}
+}
+~~~
+
+
+
+
+<br><br>
 
 ### Enlaces de Interes ###
 [GraphQL](http://facebook.github.io/graphql/) <br>
