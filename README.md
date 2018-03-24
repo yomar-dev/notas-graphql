@@ -187,6 +187,30 @@ Además **GraphQL** nos permite pedir al servidor todo la información que neces
 }
 ~~~
 
+<br>
+**Variables:** Para usar variables es necesario utilizar la forma completa para realizar un *Query*, que es la siguiente:<br>
+
+~~~
+query <nombreQuery>(<$variable>: type = <valor por defecto>) {
+
+}
+~~~
+
+*Ejemplo:* <br>
+~~~
+query getCurso($id: Int = 4){
+	curso(id: $id){
+		titulo
+	}
+}
+~~~
+
+*Sección de variables GraphiQL:* <br>
+~~~
+{
+	"id": 4
+}
+~~~
 
 
 
