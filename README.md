@@ -161,3 +161,4 @@ type Mutation {
 [GraphQL.js](https://github.com/graphql/graphql-js) <br>
 [Scalar Types](http://graphql.org/learn/schema/#scalar-types) <br>
 [Custom Scalars](https://www.apollographql.com/docs/graphql-tools/scalars.html) <br>
+[Graphql Starwars - Example GraphQL server using node.js](https://github.com/jahewson/graphql-starwars)
