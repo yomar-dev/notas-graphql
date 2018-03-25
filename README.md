@@ -271,6 +271,35 @@ fragment CamposNecesarios on Curso {
 ~~~
 
 
+**Directives:** Nos permiten pedir ciertos valores de una consulta dependiendo de si una variable es **true** o **false**.
+
+Tenemos dos directivas:
+
+ - **@include:** Incluye un campo si el argumento es **true.**
+ - **@skip:** Excluye un campo si el argumento es **true.**
+
+*Ejemplo:* <br>
+
+Sección de variables: <br>
+~~~
+{
+	"conDescripcion": true
+}
+~~~
+
+Petición:
+~~~
+query Cursos($conDescripcion: Boolean!){
+	cursos {
+		titulo
+		profesor @include(if: $conDescripcion){
+			nombre
+		}
+	}
+}
+~~~
+
+
 
 <br><br>
 
