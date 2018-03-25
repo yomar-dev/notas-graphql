@@ -313,6 +313,32 @@ mutation {
 ~~~
 
 
+**Input Types:**  Nos permiten pasar objetos en las mutaciones de manera sencilla, en lugar de pasar parametro por parametro vamos a pasar un solo parametro, el **Input Type.**<br>
+
+*Implementación del Input Type en server:*
+
+~~~
+input NuevoProfesor {
+    nombre: String!
+    genero: Genero
+}
+~~~
+
+*Consulta del lado del cliente:*
+
+~~~
+mutation {
+  profesorAdd(profesor: {
+    nombre: "Andrea"
+    genero: FEMENINO
+    nacionalidad: "Colombia"
+  }) {
+    id
+  }
+}
+~~~
+
+
 
 <br><br>
 
