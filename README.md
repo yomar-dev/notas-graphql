@@ -234,6 +234,26 @@ query getCurso($id: Int = 4){
 ~~~
 
 
+**Fragments:** Son una manera que nos permite **GraphQL** en las consultas de agrupar campos para poder utilizarlos de una manera conveniente para nuestra consulta.<br>
+
+*Ejemplo:* <br>
+~~~
+{
+  curso(id: 1) {
+    ...CamposNecesarios
+  }
+  cursos {
+    ...CamposNecesarios
+  }
+}
+
+fragment CamposNecesarios on Curso {
+  titulo
+  descripcion
+}
+~~~
+
+
 
 <br><br>
 
