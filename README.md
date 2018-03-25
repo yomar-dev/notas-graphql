@@ -254,6 +254,23 @@ fragment CamposNecesarios on Curso {
 ~~~
 
 
+**Inline Fragments:** Nos permite pedir los campos necesarios dependiendo del *tipo* que devuelvan los **Unions** o las **Interfaces** donde no sabemos que tipos nos devuelven.<br>
+
+*Ejemplo:* <br>
+~~~
+{
+	buscar(query: 'GraphQL') {
+		... on Curso {
+			titulo
+		}
+		... on Profesor {
+			nombre
+		}
+	}
+}
+~~~
+
+
 
 <br><br>
 
