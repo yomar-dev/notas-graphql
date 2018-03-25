@@ -300,6 +300,19 @@ query Cursos($conDescripcion: Boolean!){
 ~~~
 
 
+**Mutations:** 
+
+*Ejemplo:* Agregar un nuevo profesor. <br>
+
+~~~
+mutation {
+  profesorAdd(nombre: "Andrea", genero: FEMENINO){
+    id
+  }
+}
+~~~
+
+
 
 <br><br>
 
